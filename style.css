@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  html{
+    font-size: 32px;
+  }
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('./background\ img.jpg');
+    /* background-color: black; */
+    color:rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  h1{
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin: 20px;
+  }
+
+
+  h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+    font-size: 80px;
+  }
+
+
+  
+  .counter{
+    display: flex;
+    border: 5px solid rgba(255,255,255,0.5);
+    padding: 50px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  body>h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 15px  0px;
+  }
+  
+  body>p{
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  .counter .box{
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .counter .box::after{
+    content: ":";
+    height: 70px;
+    width: 10px;
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 2.5rem;
+  }
+  .counter .box:last-of-type::after{
+    display: none;
+  }
+  
+  .counter .box h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  
+ 
+  
+  @media (min-width:576px) {
+    html{
+      font-size:18px ;
+    }
+    .counter .box{
+      width: 100px;
+      height: 100px;
+    }
+    .form input[type="text"]{
+      width: 300px;
+    }
+  }
+  
+  @media (min-width:768px) {
+    html{
+      font-size:20px ;
+    }
+    .counter .box{
+      width: 110px;
+      height: 110px;
+    }
+    .form input[type="text"]{
+      width: 340px;
+    }
+  }
